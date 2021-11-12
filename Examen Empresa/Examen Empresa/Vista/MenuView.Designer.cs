@@ -29,28 +29,31 @@ namespace Examen_Empresa.Vista
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuView));
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.TiposStripTabItem = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx4 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.TipoStripButton = new System.Windows.Forms.ToolStripButton();
             this.EstadoStripButton = new System.Windows.Forms.ToolStripButton();
             this.TicketStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.tabbedMDIManager1 = new Syncfusion.Windows.Forms.Tools.TabbedMDIManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
             this.TiposStripTabItem.Panel.SuspendLayout();
-            this.toolStripTabItem2.Panel.SuspendLayout();
-            this.toolStripTabItem3.Panel.SuspendLayout();
-            this.toolStripTabItem4.Panel.SuspendLayout();
             this.toolStripEx1.SuspendLayout();
+            this.toolStripTabItem2.Panel.SuspendLayout();
             this.toolStripEx2.SuspendLayout();
+            this.toolStripTabItem3.Panel.SuspendLayout();
             this.toolStripEx3.SuspendLayout();
+            this.toolStripTabItem4.Panel.SuspendLayout();
             this.toolStripEx4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +83,7 @@ namespace Examen_Empresa.Vista
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.TiposStripTabItem;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem4;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(1149, 203);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -108,60 +111,6 @@ namespace Examen_Empresa.Vista
             this.TiposStripTabItem.Tag = "1";
             this.TiposStripTabItem.Text = "Tipos";
             // 
-            // toolStripTabItem2
-            // 
-            this.toolStripTabItem2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripTabItem2.Name = "toolStripTabItem2";
-            // 
-            // ribbonControlAdv1.ribbonPanel2
-            // 
-            this.toolStripTabItem2.Panel.Controls.Add(this.toolStripEx2);
-            this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
-            this.toolStripTabItem2.Panel.ScrollPosition = 0;
-            this.toolStripTabItem2.Panel.TabIndex = 3;
-            this.toolStripTabItem2.Panel.Text = "Estado";
-            this.toolStripTabItem2.Position = 1;
-            this.toolStripTabItem2.Size = new System.Drawing.Size(81, 34);
-            this.toolStripTabItem2.Tag = "2";
-            this.toolStripTabItem2.Text = "Estado";
-            // 
-            // toolStripTabItem3
-            // 
-            this.toolStripTabItem3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripTabItem3.Name = "toolStripTabItem3";
-            // 
-            // ribbonControlAdv1.ribbonPanel3
-            // 
-            this.toolStripTabItem3.Panel.Controls.Add(this.toolStripEx3);
-            this.toolStripTabItem3.Panel.Name = "ribbonPanel3";
-            this.toolStripTabItem3.Panel.ScrollPosition = 0;
-            this.toolStripTabItem3.Panel.TabIndex = 4;
-            this.toolStripTabItem3.Panel.Text = "Ticket";
-            this.toolStripTabItem3.Position = 2;
-            this.toolStripTabItem3.Size = new System.Drawing.Size(76, 34);
-            this.toolStripTabItem3.Tag = "3";
-            this.toolStripTabItem3.Text = "Ticket";
-            // 
-            // toolStripTabItem4
-            // 
-            this.toolStripTabItem4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripTabItem4.Name = "toolStripTabItem4";
-            // 
-            // ribbonControlAdv1.ribbonPanel4
-            // 
-            this.toolStripTabItem4.Panel.Controls.Add(this.toolStripEx4);
-            this.toolStripTabItem4.Panel.Name = "ribbonPanel4";
-            this.toolStripTabItem4.Panel.ScrollPosition = 0;
-            this.toolStripTabItem4.Panel.TabIndex = 5;
-            this.toolStripTabItem4.Panel.Text = "Detalles";
-            this.toolStripTabItem4.Position = 3;
-            this.toolStripTabItem4.Size = new System.Drawing.Size(95, 34);
-            this.toolStripTabItem4.Tag = "4";
-            this.toolStripTabItem4.Text = "Detalles";
-            // 
             // toolStripEx1
             // 
             this.toolStripEx1.AutoSize = false;
@@ -180,6 +129,24 @@ namespace Examen_Empresa.Vista
             this.toolStripEx1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.toolStripEx1.Size = new System.Drawing.Size(248, 116);
             this.toolStripEx1.TabIndex = 0;
+            // 
+            // toolStripTabItem2
+            // 
+            this.toolStripTabItem2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripTabItem2.Name = "toolStripTabItem2";
+            // 
+            // ribbonControlAdv1.ribbonPanel2
+            // 
+            this.toolStripTabItem2.Panel.Controls.Add(this.toolStripEx2);
+            this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
+            this.toolStripTabItem2.Panel.ScrollPosition = 0;
+            this.toolStripTabItem2.Panel.TabIndex = 3;
+            this.toolStripTabItem2.Panel.Text = "Estado";
+            this.toolStripTabItem2.Position = 1;
+            this.toolStripTabItem2.Size = new System.Drawing.Size(81, 34);
+            this.toolStripTabItem2.Tag = "2";
+            this.toolStripTabItem2.Text = "Estado";
             // 
             // toolStripEx2
             // 
@@ -200,6 +167,24 @@ namespace Examen_Empresa.Vista
             this.toolStripEx2.Size = new System.Drawing.Size(254, 116);
             this.toolStripEx2.TabIndex = 0;
             // 
+            // toolStripTabItem3
+            // 
+            this.toolStripTabItem3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripTabItem3.Name = "toolStripTabItem3";
+            // 
+            // ribbonControlAdv1.ribbonPanel3
+            // 
+            this.toolStripTabItem3.Panel.Controls.Add(this.toolStripEx3);
+            this.toolStripTabItem3.Panel.Name = "ribbonPanel3";
+            this.toolStripTabItem3.Panel.ScrollPosition = 0;
+            this.toolStripTabItem3.Panel.TabIndex = 4;
+            this.toolStripTabItem3.Panel.Text = "Ticket";
+            this.toolStripTabItem3.Position = 2;
+            this.toolStripTabItem3.Size = new System.Drawing.Size(76, 34);
+            this.toolStripTabItem3.Tag = "3";
+            this.toolStripTabItem3.Text = "Ticket";
+            // 
             // toolStripEx3
             // 
             this.toolStripEx3.AutoSize = false;
@@ -218,6 +203,24 @@ namespace Examen_Empresa.Vista
             this.toolStripEx3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.toolStripEx3.Size = new System.Drawing.Size(255, 116);
             this.toolStripEx3.TabIndex = 0;
+            // 
+            // toolStripTabItem4
+            // 
+            this.toolStripTabItem4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripTabItem4.Name = "toolStripTabItem4";
+            // 
+            // ribbonControlAdv1.ribbonPanel4
+            // 
+            this.toolStripTabItem4.Panel.Controls.Add(this.toolStripEx4);
+            this.toolStripTabItem4.Panel.Name = "ribbonPanel4";
+            this.toolStripTabItem4.Panel.ScrollPosition = 0;
+            this.toolStripTabItem4.Panel.TabIndex = 5;
+            this.toolStripTabItem4.Panel.Text = "Detalles";
+            this.toolStripTabItem4.Position = 3;
+            this.toolStripTabItem4.Size = new System.Drawing.Size(95, 34);
+            this.toolStripTabItem4.Tag = "4";
+            this.toolStripTabItem4.Text = "Detalles";
             // 
             // toolStripEx4
             // 
@@ -248,6 +251,7 @@ namespace Examen_Empresa.Vista
             this.TipoStripButton.Size = new System.Drawing.Size(161, 91);
             this.TipoStripButton.Text = "Tipos de Soporte";
             this.TipoStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TipoStripButton.Click += new System.EventHandler(this.TipoStripButton_Click);
             // 
             // EstadoStripButton
             // 
@@ -259,6 +263,7 @@ namespace Examen_Empresa.Vista
             this.EstadoStripButton.Size = new System.Drawing.Size(193, 91);
             this.EstadoStripButton.Text = "Estado de los Tickets";
             this.EstadoStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.EstadoStripButton.Click += new System.EventHandler(this.EstadoStripButton_Click);
             // 
             // TicketStripButton
             // 
@@ -271,6 +276,7 @@ namespace Examen_Empresa.Vista
             this.TicketStripButton.Text = "Generar Ticket";
             this.TicketStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.TicketStripButton.ToolTipText = "toolStripButton1";
+            this.TicketStripButton.Click += new System.EventHandler(this.TicketStripButton_Click);
             // 
             // toolStripButton1
             // 
@@ -282,6 +288,19 @@ namespace Examen_Empresa.Vista
             this.toolStripButton1.Size = new System.Drawing.Size(172, 91);
             this.toolStripButton1.Text = "Tickets Generados";
             this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // tabbedMDIManager1
+            // 
+            this.tabbedMDIManager1.AttachedTo = this;
+            this.tabbedMDIManager1.CloseButtonBackColor = System.Drawing.Color.White;
+            this.tabbedMDIManager1.CloseButtonToolTip = "";
+            this.tabbedMDIManager1.DropDownButtonToolTip = "";
+            this.tabbedMDIManager1.ImageSize = new System.Drawing.Size(16, 16);
+            this.tabbedMDIManager1.NeedUpdateHostedForm = false;
+            this.tabbedMDIManager1.ShowCloseButton = true;
+            this.tabbedMDIManager1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2010);
+            this.tabbedMDIManager1.ThemeName = "TabRendererOffice2010";
             // 
             // MenuView
             // 
@@ -289,6 +308,7 @@ namespace Examen_Empresa.Vista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 630);
             this.Controls.Add(this.ribbonControlAdv1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.IsMdiContainer = true;
             this.Name = "MenuView";
             this.Text = "Menu";
@@ -297,15 +317,15 @@ namespace Examen_Empresa.Vista
             this.ribbonControlAdv1.ResumeLayout(false);
             this.ribbonControlAdv1.PerformLayout();
             this.TiposStripTabItem.Panel.ResumeLayout(false);
-            this.toolStripTabItem2.Panel.ResumeLayout(false);
-            this.toolStripTabItem3.Panel.ResumeLayout(false);
-            this.toolStripTabItem4.Panel.ResumeLayout(false);
             this.toolStripEx1.ResumeLayout(false);
             this.toolStripEx1.PerformLayout();
+            this.toolStripTabItem2.Panel.ResumeLayout(false);
             this.toolStripEx2.ResumeLayout(false);
             this.toolStripEx2.PerformLayout();
+            this.toolStripTabItem3.Panel.ResumeLayout(false);
             this.toolStripEx3.ResumeLayout(false);
             this.toolStripEx3.PerformLayout();
+            this.toolStripTabItem4.Panel.ResumeLayout(false);
             this.toolStripEx4.ResumeLayout(false);
             this.toolStripEx4.PerformLayout();
             this.ResumeLayout(false);
@@ -327,5 +347,6 @@ namespace Examen_Empresa.Vista
         private System.Windows.Forms.ToolStripButton TicketStripButton;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx4;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private Syncfusion.Windows.Forms.Tools.TabbedMDIManager tabbedMDIManager1;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examen_Empresa.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace Examen_Empresa.Vista
         public TiposView()
         {
             InitializeComponent();
+            TipoController controlador = new TipoController(this);
+        }
+
+        private void TiposView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

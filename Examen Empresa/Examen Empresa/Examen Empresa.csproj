@@ -64,8 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controladores\LoginController.cs" />
+    <Compile Include="Controladores\TipoController.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
+    <Compile Include="Modelos\DAO\TipoDAO.cs" />
     <Compile Include="Modelos\DAO\UsuarioDAO.cs" />
+    <Compile Include="Modelos\Entidades\Estado.cs" />
+    <Compile Include="Modelos\Entidades\Tipo.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

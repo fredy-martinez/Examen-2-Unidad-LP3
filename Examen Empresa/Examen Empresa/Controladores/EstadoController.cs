@@ -42,7 +42,7 @@ namespace Examen_Empresa.Controladores
             }
             else
             {
-                MessageBox.Show("Debe ingresaar los parametros 'Sin resolver' 'Abierto' 'En espera' o 'Cerrado'");
+                MessageBox.Show("Debe ingresar los parametros 'Sin resolver' 'Abierto' 'En espera' o 'Cerrado'");
             }
             try
             {

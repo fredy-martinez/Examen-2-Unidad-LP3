@@ -29,7 +29,7 @@ namespace Examen_Empresa.Controladores
             vista.CancelarButton.Click += new EventHandler(Cancelar);
         }
 
-        //Aqui
+        //AQUI
         private void Guardar(object sender, EventArgs e)
         {
             if (vista.NombreTextBox.Text == "")
@@ -47,7 +47,7 @@ namespace Examen_Empresa.Controladores
                 vista.errorProvider1.SetError(vista.TipoComboBox, "Ingrese el tipo de soporte");
                 vista.TipoComboBox.Focus();
             }
-
+            //AQUI
             try
             {
                 ticket.Soporte = vista.TipoComboBox.Text;
@@ -107,6 +107,7 @@ namespace Examen_Empresa.Controladores
                 vista.NombreTextBox.Text = vista.TicketDataGridView.CurrentRow.Cells["NOMBRECLIENTE"].Value.ToString();
                 vista.TipoComboBox.Text = vista.TicketDataGridView.CurrentRow.Cells["SOPORTE"].Value.ToString();
                 vista.EstadoComboBox.Text = vista.TicketDataGridView.CurrentRow.Cells["ESTADO"].Value.ToString();
+                //vista.FechaDateTimePicker.Text = vista.TicketDataGridView.CurrentRow.Cells["FECHAINICIO"].Value.ToString();
             }
             else
             {

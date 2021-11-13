@@ -63,9 +63,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\EstadoController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
     <Compile Include="Controladores\TipoController.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
+    <Compile Include="Modelos\DAO\EstadoDAO.cs" />
     <Compile Include="Modelos\DAO\TipoDAO.cs" />
     <Compile Include="Modelos\DAO\UsuarioDAO.cs" />
     <Compile Include="Modelos\Entidades\Estado.cs" />
@@ -79,6 +81,7 @@
     <Compile Include="Vista\DetalleView.Designer.cs">
       <DependentUpon>DetalleView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\EsatdoController.cs" />
     <Compile Include="Vista\EstadoView.cs">
       <SubType>Form</SubType>
     </Compile>

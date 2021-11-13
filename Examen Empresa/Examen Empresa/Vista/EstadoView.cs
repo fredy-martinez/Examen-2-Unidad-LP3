@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examen_Empresa.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace Examen_Empresa.Vista
         public EstadoView()
         {
             InitializeComponent();
+            EstadoController controlador = new EstadoController(this);
         }
     }
 }

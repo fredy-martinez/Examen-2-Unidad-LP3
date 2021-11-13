@@ -20,7 +20,7 @@ namespace Examen_Empresa.Modelos.DAO
             {
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" INSERT INTO TICKET ");
-                sql.Append(" VALUES (@NombreCliente, @FechaInicio, @Soporte, @Estado); ");
+                sql.Append(" VALUES (@NombreCliente, @Soporte, @Estado, @FechaInicio); ");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();
@@ -28,8 +28,8 @@ namespace Examen_Empresa.Modelos.DAO
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = sql.ToString();
                 comando.Parameters.Add("@NombreCliente", SqlDbType.NVarChar, 50).Value = ticket.NombreCliente;
-                comando.Parameters.Add("@Estado", SqlDbType.NVarChar, 50).Value = ticket.Estado;
                 comando.Parameters.Add("@Soporte", SqlDbType.NVarChar, 50).Value = ticket.Soporte;
+                comando.Parameters.Add("@Estado", SqlDbType.NVarChar, 50).Value = ticket.Estado;
                 comando.Parameters.Add("@FechaInicio", SqlDbType.DateTime).Value = ticket.FechaInicio;
                 comando.ExecuteNonQuery();
                 MiConexion.Close();

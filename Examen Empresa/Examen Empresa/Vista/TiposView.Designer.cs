@@ -101,6 +101,7 @@ namespace Examen_Empresa.Vista
             // 
             // TipoDataGridView
             // 
+            this.TipoDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.TipoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TipoDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.TipoDataGridView.Location = new System.Drawing.Point(0, 266);

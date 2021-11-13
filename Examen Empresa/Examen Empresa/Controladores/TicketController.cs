@@ -15,6 +15,8 @@ namespace Examen_Empresa.Controladores
         TicketView vista;
         TicketDAO ticketDAO = new TicketDAO();
         Ticket ticket = new Ticket();
+        TipoDAO tipoDAO = new TipoDAO();
+        EstadoDAO estadoDAO = new EstadoDAO();
 
         string operacion = string.Empty;
 
@@ -29,7 +31,7 @@ namespace Examen_Empresa.Controladores
             vista.CancelarButton.Click += new EventHandler(Cancelar);
         }
 
-        //AQUI
+        
         private void Guardar(object sender, EventArgs e)
         {
             if (vista.NombreTextBox.Text == "")
@@ -37,17 +39,7 @@ namespace Examen_Empresa.Controladores
                 vista.errorProvider1.SetError(vista.NombreTextBox, "Ingrese el nombre");
                 vista.NombreTextBox.Focus();
             }
-            if (vista.EstadoComboBox.Text == "")
-            {
-                vista.errorProvider1.SetError(vista.EstadoComboBox, "Ingrese el estado ");
-                vista.EstadoComboBox.Focus();
-            }
-            if (vista.TipoComboBox.Text == "")
-            {
-                vista.errorProvider1.SetError(vista.TipoComboBox, "Ingrese el tipo de soporte");
-                vista.TipoComboBox.Focus();
-            }
-            //AQUI
+            
             try
             {
                 ticket.Soporte = vista.TipoComboBox.Text;
@@ -64,7 +56,7 @@ namespace Examen_Empresa.Controladores
                         DeshabilitarControles();
                         LimpiarControles();
                         MessageBox.Show("Ticket creado exitosamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ListarClientes();
+                        ListarTicket();
                     }
                     else
                     {
@@ -81,7 +73,7 @@ namespace Examen_Empresa.Controladores
                         DeshabilitarControles();
                         LimpiarControles();
                         MessageBox.Show("El ticket ha sido modificado exitosamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ListarClientes();
+                        ListarTicket();
                     }
                     else
                     {
@@ -95,7 +87,6 @@ namespace Examen_Empresa.Controladores
             }
         }
 
-        // fecha inicio
         private void Modificar(object sender, EventArgs e)
         {
             if (vista.TicketDataGridView.SelectedRows.Count > 0)
@@ -107,7 +98,7 @@ namespace Examen_Empresa.Controladores
                 vista.NombreTextBox.Text = vista.TicketDataGridView.CurrentRow.Cells["NOMBRECLIENTE"].Value.ToString();
                 vista.TipoComboBox.Text = vista.TicketDataGridView.CurrentRow.Cells["SOPORTE"].Value.ToString();
                 vista.EstadoComboBox.Text = vista.TicketDataGridView.CurrentRow.Cells["ESTADO"].Value.ToString();
-                //vista.FechaDateTimePicker.Text = vista.TicketDataGridView.CurrentRow.Cells["FECHAINICIO"].Value.ToString();
+                //vista.FechaDateTimePicker.Value = Convert.ToDateTime(vista.TicketDataGridView.CurrentRow.Cells["FECHAINICIO"].Value.ToString());
             }
             else
             {
@@ -125,7 +116,7 @@ namespace Examen_Empresa.Controladores
                     DeshabilitarControles();
                     LimpiarControles();
                     MessageBox.Show("Ticket eliminado exitosamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ListarClientes();
+                    ListarTicket();
                 }
                 else
                 {
@@ -134,14 +125,30 @@ namespace Examen_Empresa.Controladores
             }
         }
 
-        private void ListarClientes()
+        private void ListarTicket()
         {
             vista.TicketDataGridView.DataSource = ticketDAO.GetTicket();
         }
 
+        private void ListarTipos()
+        {
+            vista.TipoComboBox.DataSource =  tipoDAO.GetSoporte();
+            vista.TipoComboBox.DisplayMember = "TIPOS";
+            vista.TipoComboBox.ValueMember = "SOPORTE";
+        }
+
+        private void ListarEstado()
+        {
+            vista.EstadoComboBox.DataSource = estadoDAO.GetEstado();
+            vista.EstadoComboBox.DisplayMember = "ESTADO";
+            vista.EstadoComboBox.ValueMember = "ESTADO";
+        }
+
         private void Load(object sender, EventArgs e)
         {
-            ListarClientes();
+            ListarTicket();
+            ListarEstado();
+            ListarTipos();
         }
 
         private void Cancelar(object sender, EventArgs e)
@@ -155,6 +162,8 @@ namespace Examen_Empresa.Controladores
         {
             operacion = "Nuevo";
             HabilitarControles();
+            ListarEstado();
+            ListarTipos();
         }
 
         private void HabilitarControles()

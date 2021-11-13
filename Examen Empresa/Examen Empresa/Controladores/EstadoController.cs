@@ -35,7 +35,15 @@ namespace Examen_Empresa.Controladores
                 vista.errorProvider1.SetError(vista.EstadoTextBox, "Ingrese la estado de su ticket");
                 vista.EstadoTextBox.Focus();
             }
-            // Aqui falta validar que solo acepte los tipos de estado que esta en el campus
+            vista.EstadoTextBox.Text.ToUpper();
+            if (vista.EstadoTextBox.Text != "SIN RESOLVER" || vista.EstadoTextBox.Text != "ABIERTO" || vista.EstadoTextBox.Text != "CERRADO" || vista.EstadoTextBox.Text != "EN ESPERA")
+            {
+                
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresaar los parametros 'Sin resolver' 'Abierto' 'En espera' o 'Cerrado'");
+            }
             try
             {
                 estado.Estados = vista.EstadoTextBox.Text;

@@ -29,36 +29,38 @@ namespace Examen_Empresa.Vista
         /// </summary>
         private void InitializeComponent()
         {
-            this.DetallesDataGridView = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.DetallesDataGridView)).BeginInit();
+            this.DetalleDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DetalleDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // DetallesDataGridView
+            // DetalleDataGridView
             // 
-            this.DetallesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DetallesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DetallesDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.DetallesDataGridView.Name = "DetallesDataGridView";
-            this.DetallesDataGridView.RowHeadersWidth = 62;
-            this.DetallesDataGridView.RowTemplate.Height = 28;
-            this.DetallesDataGridView.Size = new System.Drawing.Size(800, 450);
-            this.DetallesDataGridView.TabIndex = 0;
+            this.DetalleDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DetalleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DetalleDataGridView.Location = new System.Drawing.Point(-8, -1);
+            this.DetalleDataGridView.Name = "DetalleDataGridView";
+            this.DetalleDataGridView.RowHeadersWidth = 62;
+            this.DetalleDataGridView.RowTemplate.Height = 28;
+            this.DetalleDataGridView.Size = new System.Drawing.Size(797, 472);
+            this.DetalleDataGridView.TabIndex = 0;
             // 
             // DetalleView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.DetallesDataGridView);
+            this.ClientSize = new System.Drawing.Size(776, 471);
+            this.Controls.Add(this.DetalleDataGridView);
             this.Name = "DetalleView";
             this.Text = "Detalles";
-            ((System.ComponentModel.ISupportInitialize)(this.DetallesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DetalleDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView DetallesDataGridView;
+        public System.Windows.Forms.DataGridView DetalleDataGridView;
     }
 }

@@ -133,8 +133,8 @@ namespace Examen_Empresa.Controladores
         private void ListarTipos()
         {
             vista.TipoComboBox.DataSource =  tipoDAO.GetSoporte();
-            vista.TipoComboBox.DisplayMember = "TIPOS";
-            vista.TipoComboBox.ValueMember = "SOPORTE";
+            vista.TipoComboBox.DisplayMember = "TIPOS"; 
+            vista.TipoComboBox.ValueMember = "SOPORTE"; 
         }
 
         private void ListarEstado()

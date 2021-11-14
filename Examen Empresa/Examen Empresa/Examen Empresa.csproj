@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\DetalleController.cs" />
     <Compile Include="Controladores\EstadoController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
     <Compile Include="Controladores\TicketController.cs" />
@@ -84,7 +85,6 @@
     <Compile Include="Vista\DetalleView.Designer.cs">
       <DependentUpon>DetalleView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\EsatdoController.cs" />
     <Compile Include="Vista\EstadoView.cs">
       <SubType>Form</SubType>
     </Compile>
